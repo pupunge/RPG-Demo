@@ -9,6 +9,9 @@ function start() {
     canvas.addEventListener('mouseup', mouseUp);
     window.addEventListener('keydown', keyDown);
 
+    imageLoad();
+    createOffscreenCanvas();
+
     loop();
 }
 
@@ -35,4 +38,8 @@ function keyDown(event) {
     if (scene === 'Title') {
         keyDownTitle(key);
     }
+}
+
+function rightClick() {
+    return false;
 }
