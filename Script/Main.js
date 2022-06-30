@@ -18,6 +18,12 @@ function start() {
 function loop() {
     if (scene === 'Title') {
         loopTitle();
+    } else if (scene === 'SaveSelect') {
+        loopSaveSelect();
+    } else if (scene === 'Game') {
+        loopGame();
+    } else if (scene === 'Collection') {
+        loopCollection();
     }
 
     requestAnimationFrame(loop);
@@ -29,6 +35,12 @@ function mouseUp(event) {
 
     if (scene === 'Title') {
         mouseUpTitle(x, y); 
+    } else if (scene === 'SaveSelect') {
+        mouseUpSaveSelect(x, y);
+    } else if (scene === 'Game') {
+        mouseUpGame(x, y);
+    } else if (scene === 'Collection') {
+        mouseUpCollection(x, y);
     }
 }
 
@@ -37,6 +49,12 @@ function keyDown(event) {
 
     if (scene === 'Title') {
         keyDownTitle(key);
+    } else if (scene === 'SaveSelect') {
+        keyDownSaveSelect(key);
+    } else if (scene === 'Game') {
+        keyDownGame(key);
+    } else if (scene === 'Collection') {
+        keyDownCollection(key);
     }
 }
 

@@ -25,3 +25,13 @@ function displayTitle() {
     context.drawImage(img.button.title, UITitle.collectionButton[0], UITitle.collectionButton[1]);
     context.fillText(`Collection`, UITitle.collectionText[0], UITitle.collectionText[1]);
 }
+
+function mouseUpTitle(x, y) {
+    if (menu === false) {
+        if (state === '') {
+            if (pointInsideRectArray(x, y, UITitle.startGameButton)) {
+                scene = 'SaveSelect';
+            }
+        }
+    }
+}
