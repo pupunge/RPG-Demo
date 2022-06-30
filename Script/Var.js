@@ -7,9 +7,15 @@ var state = '';
 var menu = false;
 var pause = false;
 
+var save = {};
+
 var player = {
 };
 
 var field = {
-    place : '',
+    place : 'Home',
+    floor : [],
+    wall : [],
+    enemy : [],
+    thing : [],
 };

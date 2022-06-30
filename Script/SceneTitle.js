@@ -31,7 +31,12 @@ function mouseUpTitle(x, y) {
         if (state === '') {
             if (pointInsideRectArray(x, y, UITitle.startGameButton)) {
                 scene = 'SaveSelect';
+            } else if (pointInsideRectArray(x, y, UITitle.collectionButton)) {
+                scene = 'Collection';
             }
         }
     }
+}
+
+function keyDownTitle(key) {
 }

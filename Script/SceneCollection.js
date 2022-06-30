@@ -17,5 +17,25 @@ function displayCollection() {
 
     context.fillText(`Collection`, UICollection.titleText[0], UICollection.titleText[1]);
 
-    
+    context.drawImage(img.button.back, UICollection.backButton[0], UICollection.backButton[1]);
+}
+
+function mouseUpCollection(x, y) {
+    if (menu === false) {
+        if (state === '') {
+            if (pointInsideRectArray(x, y, UICollection.backButton)) {
+                scene = 'Title';
+            }
+        }
+    }
+}
+
+function keyDownCollection(key) {
+    if (menu === false) {
+        if (state === '') {
+            if (key === 27) {
+                scene = 'Title';
+            }
+        }
+    }
 }
