@@ -9,7 +9,6 @@ function displayGame() {
     context.lineWidth = 2;
 
     context.clearRect(0, 0, 1024, 640);
-
 }
 
 function mouseUpGame(x, y) {
