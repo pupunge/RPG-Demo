@@ -9,6 +9,7 @@ function start() {
     canvas.addEventListener('mouseup', mouseUp);
     window.addEventListener('keydown', keyDown);
 
+    saveInit();
     imageLoad();
     createOffscreenCanvas();
 

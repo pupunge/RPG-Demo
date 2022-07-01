@@ -1,6 +1,6 @@
 function saveInit() {
     if (localStorage.getItem('DesserterriaRPG') === null || localStorage.getItem('DesserterriaRPG') === '[object Object]') {
-        localStorage.setItem('DesserterriaRPG', emptySave);
+        localStorage.setItem('DesserterriaRPG', JSON.stringify(emptySave));
     }
 
     save = JSON.parse(localStorage.getItem('DesserterriaRPG')); 
@@ -15,6 +15,6 @@ function loadFile() {
 }
 
 function resetFile() {
-    localStorage.setItem('DesserterriaRPG', emptySave);
+    localStorage.setItem('DesserterriaRPG', JSON.stringifty(emptySave));
     save = JSON.parse(localStorage.getItem('DesserterriaRPG')); 
 }
